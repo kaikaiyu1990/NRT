@@ -448,7 +448,7 @@
     $(".mobile-overlay--backdrop, .mobile-overlay__close").on("click", function () {
         $(bodyTag).removeClass("mobile-overlay--visible");
     });
-
+/* 
     // Mobile Menu Dropdown Toggle
     if ($(".main-menu .main-menu__sub-menu").length) {
         $(".main-menu .main-menu__child:not(:has(.main-menu__dropdown-btn))").append(
@@ -471,23 +471,24 @@
             var isSubMenuOpen = $subMenu.is(":visible");
 
             // Remove "open" and "active" classes from all dropdown buttons and menu items
-            $(".mobile-overlay .main-menu__dropdown-btn").removeClass("open");
-            $(".mobile-overlay .main-menu__child").removeClass("active");
+            //$(".mobile-overlay .main-menu__dropdown-btn").removeClass("open");
+            //$(".mobile-overlay .main-menu__child").removeClass("active");
 
             // Toggle the "open" class of the clicked dropdown if it's not already open
-            if (!isSubMenuOpen) {
-                $clickedDropdownBtn.addClass("open");
-                $mainMenuChild.addClass("active");
-            }
+            //if (!isSubMenuOpen) {
+            //   $clickedDropdownBtn.addClass("open");
+            //   $mainMenuChild.addClass("active");
+            //}
 
             // Close all open sub-menus except the one associated with the clicked dropdown
-            $openSubMenus.not($subMenu).slideUp(300);
+            //$openSubMenus.not($subMenu).slideUp(300);
 
             // Toggle the associated sub-menu
-            $subMenu.slideToggle(300);
+            //$subMenu.slideToggle(300);
         });
         // end
     }
+*/
 
     /**************************************
     ***** 14. Custom Counter

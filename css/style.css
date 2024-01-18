@@ -6803,7 +6803,7 @@ h6 {
 
 @media (max-width: 767px) {
   .pt-170 {
-    padding-top: 130px;
+    padding-top: 100px;
   }
 }
 
@@ -7117,7 +7117,7 @@ h6 {
 }
 @media (max-width: 1199px) {
   .main-menu > nav > ul {
-    gap: 30px;
+    gap: 20px;
   }
 }
 .main-menu > nav > ul > li {
@@ -7301,12 +7301,6 @@ h6 {
 .mobile-overlay .main-menu > nav > ul > li > ul > li:first-child {
   border-top: 1px solid rgba(0, 0, 0, 0);
 }
-.mobile-overlay .main-menu > nav > ul > li.active + li {
-  border-top: 1px solid transparent;
-}
-.mobile-overlay .main-menu > nav > ul > li.active > a {
-  color: var(--primary-color);
-}
 .mobile-overlay .main-menu__child:hover ul {
   transition: none;
   opacity: 1;
@@ -7385,6 +7379,15 @@ h6 {
 .mobile-overlay__close > i:hover {
   transition: all 0.3s ease-in-out;
 }
+.mobile-overlay .locale-changer {
+  line-height: 1.5;
+  padding: 15px 60px 15px 25px;
+}
+.mobile-overlay .locale-changer select {
+  padding: 2px 4px;
+  border-radius:4px;
+}
+
 
 /**************************************
     ***** 12. Mobile Menu
@@ -7789,6 +7792,12 @@ html {
   left: 0;
   z-index: 9;
 }
+.header__button .locale-changer select{
+  padding: 4px 6px;
+  border: 1px solid #555;
+  border-radius:4px;
+  
+} 
 @media (max-width: 991px) {
   .header--transparent {
     padding: 0 10px;
@@ -8745,7 +8754,7 @@ html {
   color: var(--color-white);
   font-size: 20px;
   font-weight: var(--fw-700);
-  padding: 30px 0 25px 0;
+  padding: 30px 28px 25px 0;
   border-bottom: 1px solid var(--color-dark-light);
 }
 .faq-button::after, .faq-button::before {
