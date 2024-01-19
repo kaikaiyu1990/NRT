@@ -22,7 +22,7 @@
     
     <!-- Preloader End -->
     <!-- Scroll Bottom To Top -->
-    <button class="scrollToTopBtn showBtn"><i class="fa-solid fa-hand-point-up"></i></button>
+    <button class="scrollToTopBtn showBtn"><i class="fas fa-arrow-up"></i></button>
     <!-- Header Area Start -->
     <header class="header header--transparent sticky-on aos-init aos-animate" data-aos="fade-down" data-aos-duration="1500">
         <div class="container-fluid">
@@ -64,12 +64,12 @@
                 <div class="col-xl-1 col-lg-1 d-none d-lg-block">
                     <div class="header__button text-end">
                         <div class="locale-changer ">
-                            <select>
+                            <select onchange="location.href=this.options[this.selectedIndex].value">
                                 <option class="text-center" value="zh-cn">
-                                    <a href="/">繁體中文</a>
+                                    <a href="/">繁中</a>
                                 </option>
-                                <option class="text-center" value="en">
-                                    <a href="">English</a>
+                                <option class="text-center" value="https://kaikaiyu1990.github.io/NRT_EN/index.html">
+                                    <a href="">EN</a>
                                 </option>
                             </select>
                         </div>                        
@@ -120,11 +120,11 @@
             </div>
             <div class="mobile-overlay__locale-changer">
                 <div class="locale-changer">
-                <select>
+                <select onchange="location.href=this.options[this.selectedIndex].value">
                     <option class="text-center " value="zh-cn">
                         <a href="index.html">繁體中文</a>
                     </option>
-                    <option class="text-center " value="en">
+                    <option class="text-center " value="https://kaikaiyu1990.github.io/NRT_EN/index.html">
                         <a href="">English</a>
                     </option>
                 </select>

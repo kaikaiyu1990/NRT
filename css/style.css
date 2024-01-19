@@ -7793,10 +7793,11 @@ html {
   z-index: 9;
 }
 .header__button .locale-changer select{
-  padding: 4px 6px;
+  cursor: pointer;
+  padding: 4px 2px;
   border: 1px solid #555;
   border-radius:4px;
-  
+  display: inline-block;
 } 
 @media (max-width: 991px) {
   .header--transparent {
